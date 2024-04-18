@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="C2COrderPageViewController">
+            <connections>
+                <outlet property="segmentedCon" destination="lGn-lm-fVu" id="HrN-ts-kGH"/>
+                <outlet property="view" destination="iN0-l3-epB" id="mhW-D5-GQ5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9I-ZI-fmP">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNg-eQ-Mv1">
+                            <rect key="frame" x="10" y="13.5" width="17" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="17" id="Jxj-8M-LKZ"/>
+                                <constraint firstAttribute="height" constant="17" id="hXH-yF-OiY"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" backgroundImage="icon_nav_back_black"/>
+                            <connections>
+                                <action selector="backAction:" destination="-1" eventType="touchUpInside" id="vcb-zL-ajF"/>
+                            </connections>
+                        </button>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lGn-lm-fVu">
+                            <rect key="frame" x="120.5" y="6.5" width="173" height="32"/>
+                            <segments>
+                                <segment title="Pending"/>
+                                <segment title="Completed"/>
+                            </segments>
+                            <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="segmentedConAction:" destination="-1" eventType="valueChanged" id="xbu-h6-hs4"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="0xM-br-3rD"/>
+                        <constraint firstItem="lGn-lm-fVu" firstAttribute="centerY" secondItem="I9I-ZI-fmP" secondAttribute="centerY" id="1QJ-tS-3CN"/>
+                        <constraint firstItem="WNg-eQ-Mv1" firstAttribute="leading" secondItem="I9I-ZI-fmP" secondAttribute="leading" constant="10" id="EPn-wj-QhY"/>
+                        <constraint firstItem="WNg-eQ-Mv1" firstAttribute="centerY" secondItem="I9I-ZI-fmP" secondAttribute="centerY" id="Xj0-fL-ef3"/>
+                        <constraint firstItem="lGn-lm-fVu" firstAttribute="centerX" secondItem="I9I-ZI-fmP" secondAttribute="centerX" id="jCc-Nh-8QM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="I9I-ZI-fmP" secondAttribute="trailing" id="GxC-2u-hY8"/>
+                <constraint firstItem="I9I-ZI-fmP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ims-9v-HlS"/>
+                <constraint firstItem="I9I-ZI-fmP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="mLz-Dn-kda"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="149"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_nav_back_black" width="14" height="14"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

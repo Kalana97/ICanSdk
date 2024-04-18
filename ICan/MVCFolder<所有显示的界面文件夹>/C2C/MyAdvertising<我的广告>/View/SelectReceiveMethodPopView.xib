@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SelectReceiveMethodPopView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAY-KH-0HG">
+                    <rect key="frame" x="0.0" y="656" width="414" height="240"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3eF-8x-TSi">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3B-nj-YWb">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="jnT-pz-Yyw"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvM-Vf-27g" customClass="UIControl">
+                                    <rect key="frame" x="0.0" y="20" width="414" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVX-87-yZ7">
+                                            <rect key="frame" x="169" y="16" width="76.5" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.098039215690000001" green="0.1058823529" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mp4-4g-9t1">
+                                            <rect key="frame" x="20" y="48" width="374" height="2"/>
+                                            <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="2" id="C8f-jF-lfH"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="Mp4-4g-9t1" firstAttribute="leading" secondItem="pvM-Vf-27g" secondAttribute="leading" constant="20" id="IHj-Ac-fe0"/>
+                                        <constraint firstItem="BVX-87-yZ7" firstAttribute="centerY" secondItem="pvM-Vf-27g" secondAttribute="centerY" id="Pg5-dx-Naq"/>
+                                        <constraint firstAttribute="trailing" secondItem="Mp4-4g-9t1" secondAttribute="trailing" constant="20" id="VkW-MP-MMk"/>
+                                        <constraint firstAttribute="bottom" secondItem="Mp4-4g-9t1" secondAttribute="bottom" id="X0N-89-qde"/>
+                                        <constraint firstItem="BVX-87-yZ7" firstAttribute="centerX" secondItem="pvM-Vf-27g" secondAttribute="centerX" id="Zib-1N-x8a"/>
+                                        <constraint firstAttribute="height" constant="50" id="iOV-rD-rQX"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="addBankCardAction" destination="iN0-l3-epB" eventType="touchUpInside" id="7Gc-iN-idO"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9v-Jp-twA" customClass="UIControl">
+                                    <rect key="frame" x="0.0" y="70" width="414" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加支付宝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEo-hc-t3Q">
+                                            <rect key="frame" x="169" y="16" width="76.5" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.098039215690000001" green="0.1058823529" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTE-zy-234">
+                                            <rect key="frame" x="20" y="48" width="374" height="2"/>
+                                            <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="2" id="QsG-cO-1c6"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="2eW-Va-3k8"/>
+                                        <constraint firstItem="MEo-hc-t3Q" firstAttribute="centerY" secondItem="P9v-Jp-twA" secondAttribute="centerY" id="5Aa-l9-DCX"/>
+                                        <constraint firstItem="MEo-hc-t3Q" firstAttribute="centerX" secondItem="P9v-Jp-twA" secondAttribute="centerX" id="FNZ-IP-vIn"/>
+                                        <constraint firstAttribute="trailing" secondItem="fTE-zy-234" secondAttribute="trailing" constant="20" id="I3d-0w-Tfj"/>
+                                        <constraint firstAttribute="bottom" secondItem="fTE-zy-234" secondAttribute="bottom" id="ZjJ-tP-qXF"/>
+                                        <constraint firstItem="fTE-zy-234" firstAttribute="leading" secondItem="P9v-Jp-twA" secondAttribute="leading" constant="20" id="jBp-Xb-aRN"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="addAlipayAction" destination="iN0-l3-epB" eventType="touchUpInside" id="SKb-be-EUo"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUo-9Q-UD3" customClass="UIControl">
+                                    <rect key="frame" x="0.0" y="120" width="414" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加支付宝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKC-Cd-UyU">
+                                            <rect key="frame" x="169" y="16" width="76.5" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.098039215690000001" green="0.1058823529" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bv-uZ-KJ4">
+                                            <rect key="frame" x="20" y="48" width="374" height="2"/>
+                                            <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="2" id="KdP-rs-3Ug"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="7bv-uZ-KJ4" secondAttribute="bottom" id="3qA-6X-Ga1"/>
+                                        <constraint firstItem="7bv-uZ-KJ4" firstAttribute="leading" secondItem="CUo-9Q-UD3" secondAttribute="leading" constant="20" id="9P3-04-YCD"/>
+                                        <constraint firstItem="SKC-Cd-UyU" firstAttribute="centerY" secondItem="CUo-9Q-UD3" secondAttribute="centerY" id="O3Z-b9-VTd"/>
+                                        <constraint firstAttribute="trailing" secondItem="7bv-uZ-KJ4" secondAttribute="trailing" constant="20" id="VY5-36-2RW"/>
+                                        <constraint firstAttribute="height" constant="50" id="Z7n-Ow-9EK"/>
+                                        <constraint firstItem="SKC-Cd-UyU" firstAttribute="centerX" secondItem="CUo-9Q-UD3" secondAttribute="centerX" id="hJd-n0-UJj"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="addAlipayAction" destination="iN0-l3-epB" eventType="touchUpInside" id="AcK-zl-eFy"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6C-Hm-oKw">
+                                    <rect key="frame" x="0.0" y="170" width="414" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6h5-b2-S3Y">
+                                            <rect key="frame" x="189.5" y="16" width="35" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.098039215686274508" green="0.10588235294117647" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="6h5-b2-S3Y" firstAttribute="centerX" secondItem="n6C-Hm-oKw" secondAttribute="centerX" id="Yk7-W5-gOt"/>
+                                        <constraint firstAttribute="height" constant="50" id="fxK-Sq-GPF"/>
+                                        <constraint firstItem="6h5-b2-S3Y" firstAttribute="centerY" secondItem="n6C-Hm-oKw" secondAttribute="centerY" id="gq1-ac-K4m"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBr-Oo-odM">
+                                    <rect key="frame" x="0.0" y="220" width="414" height="20"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="yLy-lM-2m6"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="3eF-8x-TSi" firstAttribute="top" secondItem="NAY-KH-0HG" secondAttribute="top" id="D6y-do-VjN"/>
+                        <constraint firstAttribute="bottom" secondItem="3eF-8x-TSi" secondAttribute="bottom" id="NWS-XS-UlH"/>
+                        <constraint firstAttribute="trailing" secondItem="3eF-8x-TSi" secondAttribute="trailing" id="geQ-Jt-irn"/>
+                        <constraint firstItem="3eF-8x-TSi" firstAttribute="leading" secondItem="NAY-KH-0HG" secondAttribute="leading" id="lYc-Fh-Tza"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="NAY-KH-0HG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0Bx-MK-GcR"/>
+                <constraint firstAttribute="bottom" secondItem="NAY-KH-0HG" secondAttribute="bottom" id="FcE-Xl-uUi"/>
+                <constraint firstItem="NAY-KH-0HG" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="u1X-KC-Ghb"/>
+            </constraints>
+            <connections>
+                <outlet property="addAlipayBgCon" destination="P9v-Jp-twA" id="nFR-Ln-y8u"/>
+                <outlet property="addAlipayLabel" destination="MEo-hc-t3Q" id="bof-4u-aQs"/>
+                <outlet property="addBankCardBgCon" destination="pvM-Vf-27g" id="xXb-ZX-N4v"/>
+                <outlet property="addBankCardLabel" destination="BVX-87-yZ7" id="sRi-zR-OdP"/>
+                <outlet property="addCashBgCon" destination="n6C-Hm-oKw" id="sO3-gJ-DKX"/>
+                <outlet property="addCashLabel" destination="6h5-b2-S3Y" id="gIp-ut-e1S"/>
+                <outlet property="addWeChatBgCon" destination="CUo-9Q-UD3" id="pD4-Z3-kQ8"/>
+                <outlet property="addWeChatLabel" destination="SKC-Cd-UyU" id="qt6-nI-kNf"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

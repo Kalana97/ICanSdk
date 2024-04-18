@@ -1,0 +1,16 @@
+/*
+  InfoPlist.strings
+  ICan
+
+  Created by dzl on 11/10/2019.
+  Copyright © 2019 dzl. All rights reserved.
+*/
+CFBundleDisplayName="iCan App";
+NSLocationWhenInUseUsageDescription="Your location information will be used to obtain nearby information about your location to help you communicate more conveniently with people nearby";
+NSLocationUsageDescription="Your location information will be used to obtain nearby information about your location to help you communicate more conveniently with people nearby";
+NSCameraUsageDescription="If not allowed, you will not be able to take photos and scan QR codes";
+NSContactsUsageDescription="Access your address book to match you with friends or to recharge your phone bill";
+NSMicrophoneUsageDescription="If not allowed, you will not be able to use the recording to send voice messages";
+NSPhotoLibraryUsageDescription="If not allowed, you will not be able to use the pictures and videos in the album to modify your profile picture, post, send, etc.";
+NSPhotoLibraryAddUsageDescription="If not allowed, you will not be able to save pictures to the album";
+UILaunchStoryboardName="LaunchScreen_hk";

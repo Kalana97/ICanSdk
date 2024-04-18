@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="KGk-i7-Jjw" customClass="FindNearbyPersonsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_default_boy" translatesAutoresizingMaskIntoConstraints="NO" id="fct-Xr-4O0" customClass="DZIconImageView">
+                        <rect key="frame" x="10" y="18" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="9MX-pk-Yrr"/>
+                            <constraint firstAttribute="width" constant="60" id="otj-nE-KCl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈哈哈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfF-TW-ITs">
+                        <rect key="frame" x="80" y="31" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100米" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBk-ez-IcD">
+                        <rect key="frame" x="80" y="51" width="33" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_gender_boy" translatesAutoresizingMaskIntoConstraints="NO" id="1XC-xw-UjI">
+                        <rect key="frame" x="131" y="31" width="11" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="AXX-kY-hYz"/>
+                            <constraint firstAttribute="width" constant="11" id="rwf-jX-UCB"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zX-oG-mha">
+                        <rect key="frame" x="196" y="30.5" width="110" height="35"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="6Tq-XJ-BUW"/>
+                            <constraint firstAttribute="height" constant="35" id="dlv-Px-uRQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="加好友">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="addFriendAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="V2z-po-Mfe"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9zX-oG-mha" secondAttribute="trailing" constant="10" id="5HQ-kp-u5g"/>
+                    <constraint firstItem="sBk-ez-IcD" firstAttribute="top" secondItem="MfF-TW-ITs" secondAttribute="bottom" constant="2" id="5YZ-4C-PgH"/>
+                    <constraint firstItem="9zX-oG-mha" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1XC-xw-UjI" secondAttribute="trailing" constant="10" id="79c-oO-ih6"/>
+                    <constraint firstItem="1XC-xw-UjI" firstAttribute="top" secondItem="MfF-TW-ITs" secondAttribute="top" id="InU-sq-xnD"/>
+                    <constraint firstItem="fct-Xr-4O0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="X2S-Tf-Ztr"/>
+                    <constraint firstItem="9zX-oG-mha" firstAttribute="centerY" secondItem="fct-Xr-4O0" secondAttribute="centerY" id="af0-Ug-LfZ"/>
+                    <constraint firstItem="1XC-xw-UjI" firstAttribute="leading" secondItem="MfF-TW-ITs" secondAttribute="trailing" constant="5" id="j2d-5P-MVp"/>
+                    <constraint firstItem="MfF-TW-ITs" firstAttribute="centerY" secondItem="fct-Xr-4O0" secondAttribute="centerY" constant="-8" id="s2b-HZ-rhE"/>
+                    <constraint firstItem="sBk-ez-IcD" firstAttribute="leading" secondItem="MfF-TW-ITs" secondAttribute="leading" id="uOb-MW-OE3"/>
+                    <constraint firstItem="fct-Xr-4O0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vP3-CM-VuL"/>
+                    <constraint firstItem="MfF-TW-ITs" firstAttribute="leading" secondItem="fct-Xr-4O0" secondAttribute="trailing" constant="10" id="xvr-3X-vBh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="addFriendBtn" destination="9zX-oG-mha" id="lfA-zJ-JCF"/>
+                <outlet property="edgeLabel" destination="sBk-ez-IcD" id="1YM-WK-hvr"/>
+                <outlet property="genderImageView" destination="1XC-xw-UjI" id="CeB-4D-oDz"/>
+                <outlet property="iconImageView" destination="fct-Xr-4O0" id="NcE-Uf-TrG"/>
+                <outlet property="nameLabel" destination="MfF-TW-ITs" id="EhJ-CE-y39"/>
+            </connections>
+            <point key="canvasLocation" x="118.84057971014494" y="127.23214285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_gender_boy" width="128" height="128"/>
+        <image name="img_default_boy" width="128" height="128"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

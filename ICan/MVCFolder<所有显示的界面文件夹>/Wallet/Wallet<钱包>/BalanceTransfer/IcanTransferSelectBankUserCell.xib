@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="73" id="KGk-i7-Jjw" customClass="IcanTransferSelectBankUserCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GbN-Ff-GZW">
+                        <rect key="frame" x="10" y="16.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="mXt-bN-4j0"/>
+                            <constraint firstAttribute="height" constant="40" id="qjv-VX-otl"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n12-7H-Oua">
+                        <rect key="frame" x="65" y="72" width="339" height="1"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="JgO-1G-Scn"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKw-Uh-evT">
+                        <rect key="frame" x="65" y="15" width="39.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.10588235294117647" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nn7-bu-iy6">
+                        <rect key="frame" x="65" y="40" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="n12-7H-Oua" secondAttribute="trailing" constant="10" id="3QT-Nd-FiN"/>
+                    <constraint firstAttribute="bottom" secondItem="n12-7H-Oua" secondAttribute="bottom" id="4He-H3-wXm"/>
+                    <constraint firstItem="nn7-bu-iy6" firstAttribute="leading" secondItem="GbN-Ff-GZW" secondAttribute="trailing" constant="15" id="HeC-Mc-ZwF"/>
+                    <constraint firstItem="n12-7H-Oua" firstAttribute="top" secondItem="nn7-bu-iy6" secondAttribute="bottom" constant="15" id="NbC-5T-nK7"/>
+                    <constraint firstItem="n12-7H-Oua" firstAttribute="leading" secondItem="GbN-Ff-GZW" secondAttribute="trailing" constant="15" id="PrH-1u-RHO"/>
+                    <constraint firstItem="GbN-Ff-GZW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="aYp-qS-ZM5"/>
+                    <constraint firstItem="GbN-Ff-GZW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kMy-K5-Prj"/>
+                    <constraint firstItem="uKw-Uh-evT" firstAttribute="leading" secondItem="GbN-Ff-GZW" secondAttribute="trailing" constant="15" id="quE-1C-j39"/>
+                    <constraint firstItem="uKw-Uh-evT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="zSb-kv-cjy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bankcardIcon" destination="GbN-Ff-GZW" id="edm-6F-cZW"/>
+                <outlet property="cardidLabel" destination="nn7-bu-iy6" id="IGa-NZ-riz"/>
+                <outlet property="nameLabel" destination="uKw-Uh-evT" id="q0M-Pq-Ny7"/>
+            </connections>
+            <point key="canvasLocation" x="69.565217391304358" y="162.38839285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

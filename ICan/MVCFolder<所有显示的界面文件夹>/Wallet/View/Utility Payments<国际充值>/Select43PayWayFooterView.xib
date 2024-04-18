@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Select43PayWayFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KN8-Zc-Hhd">
+                    <rect key="frame" x="10" y="25" width="394" height="45"/>
+                    <color key="backgroundColor" red="0.11372549019607843" green="0.50588235294117645" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="deu-iY-E7T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="支付"/>
+                    <connections>
+                        <action selector="payAction:" destination="-1" eventType="touchUpInside" id="frX-9N-6Gk"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*卡号支付：不保存卡号等相关信息" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfZ-SL-aG3">
+                    <rect key="frame" x="20" y="106.5" width="374" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="KN8-Zc-Hhd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="2DA-LL-Ygi"/>
+                <constraint firstItem="yfZ-SL-aG3" firstAttribute="top" secondItem="KN8-Zc-Hhd" secondAttribute="bottom" constant="36.5" id="6KF-0B-bqV"/>
+                <constraint firstItem="yfZ-SL-aG3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="SIr-4w-ft7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yfZ-SL-aG3" secondAttribute="trailing" constant="20" id="XWo-kA-7cm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KN8-Zc-Hhd" secondAttribute="trailing" constant="10" id="dZb-3B-W26"/>
+                <constraint firstItem="KN8-Zc-Hhd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="qaD-T1-NGz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yfZ-SL-aG3" secondAttribute="bottom" constant="33.5" id="rsA-sX-iIx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="fitstLabel" destination="yfZ-SL-aG3" id="eYB-b8-HCQ"/>
+                <outlet property="payBtn" destination="KN8-Zc-Hhd" id="gHp-3Z-7XR"/>
+            </connections>
+            <point key="canvasLocation" x="-7.2463768115942031" y="-36.495535714285715"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

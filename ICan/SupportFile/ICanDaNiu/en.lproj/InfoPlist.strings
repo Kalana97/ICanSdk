@@ -1,0 +1,16 @@
+/* 
+  InfoPlist.strings
+  ICan
+
+  Created by dzl on 11/10/2019.
+  Copyright © 2019 dzl. All rights reserved.
+*/
+CFBundleDisplayName="iCan Chat";
+NSLocationWhenInUseUsageDescription="Your location information will be used to obtain information about your location and help you communicate with people nearby more easily";
+NSLocationUsageDescription="Your location information will be used to obtain information about your location and help you communicate with people nearby more easily";
+NSCameraUsageDescription="If not, you will not be able to take photos in I Can and use the scan QR code function";
+NSContactsUsageDescription="I Can will visit your address book to match your friends or recharge your phone charges";
+NSMicrophoneUsageDescription="If not, you will not be able to record in I Can for sending voice messages";
+NSPhotoLibraryUsageDescription="If not, you will not be able to use pictures and videos in I Can";
+NSPhotoLibraryAddUsageDescription="If not allowed, you will not be able to save pictures to the album";
+UILaunchStoryboardName="LaunchScreen";

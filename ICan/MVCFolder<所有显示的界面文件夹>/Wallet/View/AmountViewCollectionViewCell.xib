@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eN3-Ua-wCK" customClass="AmountViewCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="naV-Vw-MtC">
+                        <rect key="frame" x="0.0" y="0.0" width="105" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wt-Rb-d7g">
+                                <rect key="frame" x="0.0" y="0.0" width="105" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3wt-Rb-d7g" secondAttribute="trailing" id="l5p-2I-QBP"/>
+                            <constraint firstAttribute="bottom" secondItem="3wt-Rb-d7g" secondAttribute="bottom" id="mHU-2o-SNq"/>
+                            <constraint firstItem="3wt-Rb-d7g" firstAttribute="leading" secondItem="naV-Vw-MtC" secondAttribute="leading" id="ulV-79-PZG"/>
+                            <constraint firstItem="3wt-Rb-d7g" firstAttribute="top" secondItem="naV-Vw-MtC" secondAttribute="top" id="wZf-Px-96g"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Fc-dd-B9X">
+                        <rect key="frame" x="90" y="25" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="VUc-ZV-FhH"/>
+                            <constraint firstAttribute="height" constant="20" id="mfo-TL-rNq"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="O1c-H8-UkH"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1Fc-dd-B9X" secondAttribute="trailing" constant="5" id="8pC-vh-QMY"/>
+                <constraint firstAttribute="bottom" secondItem="1Fc-dd-B9X" secondAttribute="bottom" constant="5" id="PtM-Gf-sLB"/>
+                <constraint firstAttribute="trailing" secondItem="naV-Vw-MtC" secondAttribute="trailing" constant="10" id="nsO-Pg-jUP"/>
+                <constraint firstItem="naV-Vw-MtC" firstAttribute="top" secondItem="eN3-Ua-wCK" secondAttribute="top" id="q6k-PD-kgf"/>
+                <constraint firstAttribute="bottom" secondItem="naV-Vw-MtC" secondAttribute="bottom" constant="10" id="sen-O9-OgK"/>
+                <constraint firstItem="naV-Vw-MtC" firstAttribute="leading" secondItem="eN3-Ua-wCK" secondAttribute="leading" id="xNK-sr-zra"/>
+            </constraints>
+            <size key="customSize" width="115" height="50"/>
+            <connections>
+                <outlet property="amountLabel" destination="3wt-Rb-d7g" id="mr4-52-qMY"/>
+                <outlet property="badgeImg" destination="1Fc-dd-B9X" id="3LQ-vl-fW6"/>
+            </connections>
+            <point key="canvasLocation" x="85.599999999999994" y="120.53973013493254"/>
+        </collectionViewCell>
+    </objects>
+</document>

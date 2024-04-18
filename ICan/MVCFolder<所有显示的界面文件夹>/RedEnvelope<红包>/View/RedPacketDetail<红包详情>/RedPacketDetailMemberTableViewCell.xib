@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="RedPacketDetailMemberTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GrH-Xy-XEK" customClass="DZIconImageView">
+                        <rect key="frame" x="10" y="27.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="JLk-oF-cfy"/>
+                            <constraint firstAttribute="width" constant="40" id="ztY-0y-rh4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2h-Pp-A8e">
+                        <rect key="frame" x="60" y="28" width="40" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdV-B1-Fui">
+                        <rect key="frame" x="60" y="47" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.000元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6S4-T0-qp1">
+                        <rect key="frame" x="251.5" y="28" width="58.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手气最佳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sah-Ej-Jaj">
+                        <rect key="frame" x="256.5" y="47.5" width="53.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_red_optimum" translatesAutoresizingMaskIntoConstraints="NO" id="B1w-gI-xPa">
+                        <rect key="frame" x="240.5" y="50" width="11" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="11" id="WfJ-77-2FL"/>
+                            <constraint firstAttribute="height" constant="11" id="ng1-H7-t16"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6S4-T0-qp1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="t2h-Pp-A8e" secondAttribute="trailing" priority="10" constant="30" id="4pa-SJ-NA7"/>
+                    <constraint firstItem="OdV-B1-Fui" firstAttribute="centerY" secondItem="sah-Ej-Jaj" secondAttribute="centerY" id="4pd-wV-DC4"/>
+                    <constraint firstItem="OdV-B1-Fui" firstAttribute="leading" secondItem="GrH-Xy-XEK" secondAttribute="trailing" constant="10" id="51B-se-QxH"/>
+                    <constraint firstItem="sah-Ej-Jaj" firstAttribute="leading" secondItem="B1w-gI-xPa" secondAttribute="trailing" constant="5" id="CRn-9R-IfZ"/>
+                    <constraint firstItem="B1w-gI-xPa" firstAttribute="centerY" secondItem="sah-Ej-Jaj" secondAttribute="centerY" id="EVz-eb-1ay"/>
+                    <constraint firstAttribute="trailing" secondItem="sah-Ej-Jaj" secondAttribute="trailing" constant="10" id="H5j-bA-TeD"/>
+                    <constraint firstItem="sah-Ej-Jaj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Sfw-gW-E0g"/>
+                    <constraint firstAttribute="trailing" secondItem="6S4-T0-qp1" secondAttribute="trailing" constant="10" id="Vcb-Jw-cds"/>
+                    <constraint firstAttribute="centerY" secondItem="6S4-T0-qp1" secondAttribute="bottom" id="b6K-9M-Is1"/>
+                    <constraint firstItem="t2h-Pp-A8e" firstAttribute="centerY" secondItem="6S4-T0-qp1" secondAttribute="centerY" id="gRN-7r-u2f"/>
+                    <constraint firstItem="GrH-Xy-XEK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="i7S-X1-n2D"/>
+                    <constraint firstItem="GrH-Xy-XEK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sdv-ev-qL2"/>
+                    <constraint firstItem="t2h-Pp-A8e" firstAttribute="leading" secondItem="GrH-Xy-XEK" secondAttribute="trailing" constant="10" id="znx-2a-TUL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="goodLuckImageView" destination="B1w-gI-xPa" id="wac-hY-huT"/>
+                <outlet property="goodLucketLabel" destination="sah-Ej-Jaj" id="pPa-PJ-8Et"/>
+                <outlet property="moneyLabel" destination="6S4-T0-qp1" id="elM-I9-Siv"/>
+                <outlet property="nameLabel" destination="t2h-Pp-A8e" id="4Sp-vQ-nFL"/>
+                <outlet property="receiveIconImageView" destination="GrH-Xy-XEK" id="GB0-yQ-RdS"/>
+                <outlet property="timeLabel" destination="OdV-B1-Fui" id="x6Y-jd-CNg"/>
+            </connections>
+            <point key="canvasLocation" x="-162.31884057971016" y="2.34375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_red_optimum" width="11" height="11"/>
+    </resources>
+</document>

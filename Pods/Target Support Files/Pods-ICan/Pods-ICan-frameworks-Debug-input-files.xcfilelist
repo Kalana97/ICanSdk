@@ -1,0 +1,16 @@
+${PODS_ROOT}/Target Support Files/Pods-ICan/Pods-ICan-frameworks.sh
+${PODS_ROOT}/NERtcSDK/NERTC/NERtcSDK/NERtcAiDenoise.framework
+${PODS_ROOT}/NERtcSDK/NERTC/NERtcSDK/NERtcAiHowling.framework
+${PODS_ROOT}/NERtcSDK/NERTC/NERtcSDK/NERtcBeauty.framework
+${PODS_ROOT}/NERtcSDK/NERTC/NERtcSDK/NERtcFaceDetect.framework
+${PODS_ROOT}/NERtcSDK/NERTC/NERtcSDK/NERtcFaceEnhance.framework
+${PODS_ROOT}/NERtcSDK/NERTC/NERtcSDK/NERtcnn.framework
+${PODS_ROOT}/NERtcSDK/NERTC/NERtcSDK/NERtcSDK.framework
+${PODS_ROOT}/NERtcSDK/NERTC/NERtcSDK/NERtcReplayKit.framework
+${PODS_ROOT}/NERtcSDK/NERTC/NERtcSDK/NERtcPersonSegment.framework
+${PODS_ROOT}/NERtcSDK/NERTC/NERtcSDK/NERtcAudio3D.framework
+${PODS_ROOT}/NERtcSDK/NERTC/NERtcSDK/NERtcSuperResolution.framework
+${PODS_ROOT}/NERtcSDK/NERTC/NERtcSDK/NERtcVideoDenoise.framework
+${PODS_ROOT}/NIMSDK_LITE/NIMSDK/NIMSDK.framework
+${PODS_ROOT}/NIMSDK_LITE/NIMSDK/NIMNOS.framework
+${PODS_ROOT}/YXArtemis/YXArtemis.framework

@@ -1,0 +1,16 @@
+/* 
+  InfoPlist.strings
+  ICan
+
+  Created by dzl on 11/10/2019.
+  Copyright © 2019 dzl. All rights reserved.
+*/
+CFBundleDisplayName="我行";
+NSLocationWhenInUseUsageDescription="您的位置信息将用来获取所在地的附近信息，帮助您与附近的人更方便的沟通交流";
+NSLocationUsageDescription="您的位置信息将用来获取所在地的附近信息，帮助您与附近的人更方便的沟通交流";
+NSCameraUsageDescription="如果不允许，您将无法拍摄照片以及使用扫描二维码功能";
+NSContactsUsageDescription="访问您的通讯录为你匹配好友或者用于话费充值";
+NSMicrophoneUsageDescription="如果不允许，您将无法使用录音用于发送语音消息";
+NSPhotoLibraryUsageDescription="如果不允许，您将无法使用相册中的图片和视频，用于修改个人头像、发布、发送等";
+NSPhotoLibraryAddUsageDescription="如果不允许，你将无法保存图片到相册";
+UILaunchStoryboardName="LaunchScreen_hk";

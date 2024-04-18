@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "verify-success-success-tick-icon-with-png-and-vector-format-372259 (2).png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "verify-success-success-tick-icon-with-png-and-vector-format-372259 (2)@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "verify-success-success-tick-icon-with-png-and-vector-format-372259 (2)@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

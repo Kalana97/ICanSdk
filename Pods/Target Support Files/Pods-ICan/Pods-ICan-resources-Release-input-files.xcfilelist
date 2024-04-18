@@ -1,0 +1,11 @@
+${PODS_ROOT}/Target Support Files/Pods-ICan/Pods-ICan-resources.sh
+${PODS_ROOT}/AlipaySDK-iOS/AlipaySDK.bundle
+${PODS_ROOT}/BRPickerView/BRPickerView/AddressPickerView/BRAddressPickerView.bundle
+${PODS_ROOT}/BRPickerView/BRPickerView/Base/BRPickerView.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DTCoreText/Resources.bundle
+${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/QMUIKit/QMUIResources.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle
+${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle
+${PODS_ROOT}/YBImageBrowser/YBImageBrowser/YBImageBrowser.bundle
+${PODS_ROOT}/YBImageBrowser/Video/YBImageBrowserVideo.bundle

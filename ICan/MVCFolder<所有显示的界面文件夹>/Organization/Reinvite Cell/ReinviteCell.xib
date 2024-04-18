@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="270" id="KGk-i7-Jjw" customClass="ReinviteCell">
+            <rect key="frame" x="0.0" y="0.0" width="501" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="501" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myy-Pl-Dps">
+                        <rect key="frame" x="0.0" y="5" width="501" height="260"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="s4V-r9-JWs">
+                                <rect key="frame" x="15" y="108.66666666666669" width="178.33333333333334" height="43"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FtL-EN-UEf" customClass="DZIconImageView">
+                                        <rect key="frame" x="0.0" y="1" width="43" height="41.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="4sD-t2-RXU"/>
+                                            <constraint firstAttribute="width" constant="43" id="ecf-AR-4jg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thushara Perera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxb-9w-sD9">
+                                        <rect key="frame" x="52.999999999999993" y="11.333333333333327" width="125.33333333333331" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEw-RU-4jc">
+                                <rect key="frame" x="373.66666666666669" y="112.66666666666669" width="107.33333333333331" height="35"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SsD-4Z-Dec">
+                                        <rect key="frame" x="12" y="5" width="83.333333333333329" height="25"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refresh-svgrepo-com 1" translatesAutoresizingMaskIntoConstraints="NO" id="5QP-Wj-DhJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="18" height="25"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="3yE-GL-bL4"/>
+                                                    <constraint firstAttribute="width" constant="18" id="8Eh-hz-gbs"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reinvite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMj-aA-QXG">
+                                                <rect key="frame" x="23.000000000000004" y="2.3333333333333286" width="60.333333333333343" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJ0-jl-nNS">
+                                        <rect key="frame" x="0.0" y="0.0" width="107.33333333333333" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title=" "/>
+                                        <connections>
+                                            <action selector="didClickOnReinvite:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oPd-rO-XS6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="CJ0-jl-nNS" firstAttribute="width" secondItem="tEw-RU-4jc" secondAttribute="width" id="1jc-kU-wu5"/>
+                                    <constraint firstItem="SsD-4Z-Dec" firstAttribute="top" secondItem="tEw-RU-4jc" secondAttribute="top" constant="5" id="3Qn-uX-yO4"/>
+                                    <constraint firstItem="SsD-4Z-Dec" firstAttribute="leading" secondItem="tEw-RU-4jc" secondAttribute="leading" constant="12" id="3ve-NH-BkW"/>
+                                    <constraint firstItem="CJ0-jl-nNS" firstAttribute="top" secondItem="tEw-RU-4jc" secondAttribute="top" id="Gni-4F-glU"/>
+                                    <constraint firstAttribute="trailing" secondItem="CJ0-jl-nNS" secondAttribute="trailing" id="Jod-hE-Rcz"/>
+                                    <constraint firstAttribute="bottom" secondItem="SsD-4Z-Dec" secondAttribute="bottom" constant="5" id="MHj-ss-clb"/>
+                                    <constraint firstAttribute="trailing" secondItem="SsD-4Z-Dec" secondAttribute="trailing" constant="12" id="Rlg-ig-S7G"/>
+                                    <constraint firstItem="SsD-4Z-Dec" firstAttribute="centerY" secondItem="tEw-RU-4jc" secondAttribute="centerY" id="apj-Hu-ApQ"/>
+                                    <constraint firstItem="SsD-4Z-Dec" firstAttribute="centerX" secondItem="tEw-RU-4jc" secondAttribute="centerX" id="cms-zL-oyF"/>
+                                    <constraint firstItem="CJ0-jl-nNS" firstAttribute="height" secondItem="tEw-RU-4jc" secondAttribute="height" id="kWO-3S-zGC"/>
+                                    <constraint firstAttribute="bottom" secondItem="CJ0-jl-nNS" secondAttribute="bottom" id="ngY-iI-vnK"/>
+                                    <constraint firstItem="CJ0-jl-nNS" firstAttribute="leading" secondItem="tEw-RU-4jc" secondAttribute="leading" id="sRV-wD-5cC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s4V-r9-JWs" firstAttribute="leading" secondItem="myy-Pl-Dps" secondAttribute="leading" constant="15" id="27N-NM-obB"/>
+                            <constraint firstItem="tEw-RU-4jc" firstAttribute="centerY" secondItem="myy-Pl-Dps" secondAttribute="centerY" id="QUc-XD-rQX"/>
+                            <constraint firstItem="s4V-r9-JWs" firstAttribute="centerY" secondItem="myy-Pl-Dps" secondAttribute="centerY" id="Xy8-or-cli"/>
+                            <constraint firstItem="s4V-r9-JWs" firstAttribute="centerY" secondItem="myy-Pl-Dps" secondAttribute="centerY" id="gEh-ov-cQV"/>
+                            <constraint firstAttribute="trailing" secondItem="tEw-RU-4jc" secondAttribute="trailing" constant="20" id="tnF-Ed-fyX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.94901960784313721" green="0.94509803921568625" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="myy-Pl-Dps" secondAttribute="trailing" id="8JX-eu-ANt"/>
+                    <constraint firstItem="myy-Pl-Dps" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="96j-9R-LMT"/>
+                    <constraint firstAttribute="bottom" secondItem="myy-Pl-Dps" secondAttribute="bottom" constant="5" id="NDh-vI-CXV"/>
+                    <constraint firstItem="myy-Pl-Dps" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TqC-eX-Pcv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bgCell" destination="myy-Pl-Dps" id="jBc-ve-hJa"/>
+                <outlet property="btnBoarderResend" destination="tEw-RU-4jc" id="laJ-UB-4ov"/>
+                <outlet property="nameLbl" destination="Vxb-9w-sD9" id="HEZ-ed-3GN"/>
+                <outlet property="refreshImg" destination="5QP-Wj-DhJ" id="JTV-cu-UbE"/>
+                <outlet property="reinviteLbl" destination="PMj-aA-QXG" id="XjU-5J-qA3"/>
+                <outlet property="userImgIcon" destination="FtL-EN-UEf" id="xxy-xd-okJ"/>
+            </connections>
+            <point key="canvasLocation" x="154.96183206106869" y="100"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="refresh-svgrepo-com 1" width="18" height="18"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

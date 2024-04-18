@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="C2CSelectLegalTenderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g8b-nB-KQU">
+                        <rect key="frame" x="20" y="31.5" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="CVf-fY-g8Q"/>
+                            <constraint firstAttribute="height" constant="22" id="nTl-C5-hzH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOE-L6-HE5">
+                        <rect key="frame" x="64" y="35.5" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bJ-cQ-Azc">
+                        <rect key="frame" x="122" y="33" width="42.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yh4-pg-cxH">
+                        <rect key="frame" x="325" y="35" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="KvM-4O-3dq"/>
+                            <constraint firstAttribute="height" constant="15" id="N2g-lf-lno"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" backgroundImage="icon_c2c_collectlegal_sel"/>
+                        <connections>
+                            <action selector="selectAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="m4K-yj-giq"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="g8b-nB-KQU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="5Vf-W3-GWe"/>
+                    <constraint firstItem="yh4-pg-cxH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GnX-zR-fmJ"/>
+                    <constraint firstAttribute="trailing" secondItem="yh4-pg-cxH" secondAttribute="trailing" constant="70" id="Mr8-hE-f3H"/>
+                    <constraint firstItem="6bJ-cQ-Azc" firstAttribute="leading" secondItem="g8b-nB-KQU" secondAttribute="trailing" constant="80" id="aG2-wD-Mvb"/>
+                    <constraint firstItem="6bJ-cQ-Azc" firstAttribute="leading" secondItem="ZOE-L6-HE5" secondAttribute="trailing" constant="27" id="eU7-B5-Gl0"/>
+                    <constraint firstItem="6bJ-cQ-Azc" firstAttribute="centerY" secondItem="ZOE-L6-HE5" secondAttribute="centerY" id="kka-KO-IfM"/>
+                    <constraint firstItem="ZOE-L6-HE5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uff-sX-bJV"/>
+                    <constraint firstItem="g8b-nB-KQU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="z1O-UO-A2g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="codeLabel" destination="6bJ-cQ-Azc" id="fvq-7w-L60"/>
+                <outlet property="countryIconImgView" destination="g8b-nB-KQU" id="xbn-Pp-o6q"/>
+                <outlet property="selectBtn" destination="yh4-pg-cxH" id="der-KE-fVu"/>
+                <outlet property="symbolLabel" destination="ZOE-L6-HE5" id="H3m-l1-dm2"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="59"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_c2c_collectlegal_sel" width="128" height="128"/>
+    </resources>
+</document>

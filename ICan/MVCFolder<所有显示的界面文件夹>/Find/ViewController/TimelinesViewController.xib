@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimelinesViewController">
+            <connections>
+                <outlet property="navbarHeight" destination="DbR-t0-xZk" id="whV-WF-e5A"/>
+                <outlet property="numberLabel" destination="5f9-i0-Mpi" id="Nif-cn-fvJ"/>
+                <outlet property="titleLabel" destination="Ye1-lU-qjd" id="XGh-Cp-5lQ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Oeu-Zk-Xsm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjb-AB-VbH">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHy-jv-VUb">
+                            <rect key="frame" x="0.0" y="-12" width="414" height="100"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltx-Ap-VPv">
+                                    <rect key="frame" x="20" y="65" width="17" height="17"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="17" id="1Q2-hH-uP4"/>
+                                        <constraint firstAttribute="height" constant="17" id="Yne-Zn-WLl"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" backgroundImage="icon_nav_back_black"/>
+                                    <connections>
+                                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="hXQ-2D-vcP"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ye1-lU-qjd">
+                                    <rect key="frame" x="184.66666666666666" y="61.333333333333336" width="44.666666666666657" height="20.666666666666664"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" red="0.098039215690000001" green="0.1058823529" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGu-3A-exW">
+                                    <rect key="frame" x="360" y="58" width="24" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="SbK-tE-uVS"/>
+                                        <constraint firstAttribute="width" constant="24" id="xBo-bS-9fk"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" backgroundImage="icon_timeline_nav_message"/>
+                                    <connections>
+                                        <action selector="messageNoticeAction" destination="-1" eventType="touchUpInside" id="CnB-OQ-3kQ"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5f9-i0-Mpi">
+                                    <rect key="frame" x="376" y="59" width="7" height="7"/>
+                                    <color key="backgroundColor" red="0.94117647059999998" green="0.12941176469999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="7" id="WY4-e4-KoS"/>
+                                        <constraint firstAttribute="width" constant="7" id="eck-wn-VWB"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <real key="value" value="3.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="5f9-i0-Mpi" firstAttribute="top" secondItem="wGu-3A-exW" secondAttribute="top" constant="1" id="U0h-eg-NqP"/>
+                                <constraint firstItem="ltx-Ap-VPv" firstAttribute="leading" secondItem="wHy-jv-VUb" secondAttribute="leading" constant="20" id="heZ-Ve-jl9"/>
+                                <constraint firstItem="Ye1-lU-qjd" firstAttribute="centerX" secondItem="wHy-jv-VUb" secondAttribute="centerX" id="hqn-jj-jem"/>
+                                <constraint firstAttribute="height" constant="100" id="hxB-hU-tAL"/>
+                                <constraint firstAttribute="bottom" secondItem="ltx-Ap-VPv" secondAttribute="bottom" constant="18" id="siH-he-wzf"/>
+                                <constraint firstAttribute="bottom" secondItem="wGu-3A-exW" secondAttribute="bottom" constant="18" id="tXi-Wj-Ba4"/>
+                                <constraint firstAttribute="bottom" secondItem="Ye1-lU-qjd" secondAttribute="bottom" constant="18" id="uy1-Ak-utT"/>
+                                <constraint firstAttribute="trailing" secondItem="wGu-3A-exW" secondAttribute="trailing" constant="30" id="yFi-ra-ENn"/>
+                                <constraint firstItem="5f9-i0-Mpi" firstAttribute="leading" secondItem="wGu-3A-exW" secondAttribute="leading" constant="16" id="yOr-U5-fir"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="88" id="DbR-t0-xZk"/>
+                        <constraint firstAttribute="bottom" secondItem="wHy-jv-VUb" secondAttribute="bottom" id="Ehy-sD-Cc3"/>
+                        <constraint firstItem="wHy-jv-VUb" firstAttribute="centerX" secondItem="jjb-AB-VbH" secondAttribute="centerX" id="XKH-5n-RpO"/>
+                        <constraint firstItem="wHy-jv-VUb" firstAttribute="leading" secondItem="jjb-AB-VbH" secondAttribute="leading" id="d2E-Hw-Tbs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jjb-AB-VbH" secondAttribute="trailing" id="ljE-qN-ZD6"/>
+                <constraint firstItem="jjb-AB-VbH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wph-WA-MXw"/>
+                <constraint firstItem="jjb-AB-VbH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yFz-tH-Uvj"/>
+            </constraints>
+            <point key="canvasLocation" x="-91" y="143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_nav_back_black" width="14" height="14"/>
+        <image name="icon_timeline_nav_message" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="187" id="KGk-i7-Jjw" customClass="PermissionCell">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="187"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="187"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ojo-ZQ-kPq">
+                        <rect key="frame" x="10" y="5" width="389" height="177"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="r2Z-jJ-Rp3">
+                                <rect key="frame" x="15" y="76" width="213.66666666666666" height="25"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Approve Transactions" translatesAutoresizingMaskIntoConstraints="NO" id="Onz-qb-Nir" customClass="DZIconImageView">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="60Z-JG-Kdx"/>
+                                            <constraint firstAttribute="width" constant="25" id="rSP-Ba-Ln3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Approve Transactions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CR3-0m-kAF" customClass="d">
+                                        <rect key="frame" x="47.999999999999986" y="2.3333333333333286" width="165.66666666666663" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Approve Transactions" translatesAutoresizingMaskIntoConstraints="NO" id="k7F-DL-dWF" customClass="DZIconImageView">
+                                <rect key="frame" x="349" y="76" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="0Qz-Pv-GAM"/>
+                                    <constraint firstAttribute="height" constant="25" id="LUE-zp-p5N"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r2Z-jJ-Rp3" firstAttribute="centerY" secondItem="ojo-ZQ-kPq" secondAttribute="centerY" id="2K3-U6-MUA"/>
+                            <constraint firstItem="k7F-DL-dWF" firstAttribute="top" secondItem="Onz-qb-Nir" secondAttribute="top" id="76A-32-4dS"/>
+                            <constraint firstAttribute="trailing" secondItem="k7F-DL-dWF" secondAttribute="trailing" constant="15" id="DMd-2R-HnM"/>
+                            <constraint firstItem="k7F-DL-dWF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="r2Z-jJ-Rp3" secondAttribute="trailing" constant="3" id="RHY-Re-nuG"/>
+                            <constraint firstItem="r2Z-jJ-Rp3" firstAttribute="leading" secondItem="ojo-ZQ-kPq" secondAttribute="leading" constant="15" id="VVF-gO-o5j"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrV-vL-ni8">
+                        <rect key="frame" x="10" y="5" width="389" height="177"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title=" "/>
+                        <connections>
+                            <action selector="didClickOnCell:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dFR-5p-Ag4"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.94901960784313721" green="0.94509803921568625" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ojo-ZQ-kPq" secondAttribute="trailing" constant="10" id="21r-L5-TKE"/>
+                    <constraint firstItem="PrV-vL-ni8" firstAttribute="top" secondItem="ojo-ZQ-kPq" secondAttribute="top" id="4sl-RQ-hjv"/>
+                    <constraint firstItem="ojo-ZQ-kPq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="4sm-OO-YCL"/>
+                    <constraint firstAttribute="bottom" secondItem="ojo-ZQ-kPq" secondAttribute="bottom" constant="5" id="C6g-ZI-Rjy"/>
+                    <constraint firstItem="ojo-ZQ-kPq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Lcz-R5-Y4A"/>
+                    <constraint firstItem="PrV-vL-ni8" firstAttribute="bottom" secondItem="ojo-ZQ-kPq" secondAttribute="bottom" id="Rbm-R2-ntV"/>
+                    <constraint firstItem="PrV-vL-ni8" firstAttribute="width" secondItem="ojo-ZQ-kPq" secondAttribute="width" id="f2K-UI-sXa"/>
+                    <constraint firstItem="PrV-vL-ni8" firstAttribute="leading" secondItem="ojo-ZQ-kPq" secondAttribute="leading" id="hGh-nV-gDe"/>
+                    <constraint firstItem="PrV-vL-ni8" firstAttribute="height" secondItem="ojo-ZQ-kPq" secondAttribute="height" id="uCQ-Dy-siL"/>
+                    <constraint firstItem="PrV-vL-ni8" firstAttribute="trailing" secondItem="ojo-ZQ-kPq" secondAttribute="trailing" id="wMa-RA-77o"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bgCell" destination="ojo-ZQ-kPq" id="cys-Gt-RBQ"/>
+                <outlet property="isSelectBtn" destination="k7F-DL-dWF" id="XWe-b3-f7z"/>
+                <outlet property="permissionLogoImg" destination="Onz-qb-Nir" id="wHo-59-KjH"/>
+                <outlet property="permissionTypeLbl" destination="CR3-0m-kAF" id="72e-eO-ydr"/>
+            </connections>
+            <point key="canvasLocation" x="84.732824427480907" y="70.774647887323951"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Approve Transactions" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

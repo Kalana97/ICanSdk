@@ -1,0 +1,16 @@
+/* 
+  InfoPlist.strings
+  ICan
+
+  Created by dzl on 11/10/2019.
+  Copyright © 2019 dzl. All rights reserved.
+*/
+CFBundleDisplayName="iCan Chat";
+NSLocationWhenInUseUsageDescription="您的位置信息將用來獲取所在地的附近信息，幫助您與附近的人更方便的溝通交流";
+NSLocationUsageDescription="您的位置信息將用來獲取所在地的附近信息，幫助您與附近的人更方便的溝通交流";
+NSCameraUsageDescription="如果不允許，妳將無法在我行中拍攝照片以及使用掃描二維碼功能";
+NSContactsUsageDescription="我行訪問您的通訊錄為妳匹配好友或者用於話費充值";
+NSMicrophoneUsageDescription="如果不允許，妳將無法在我行錄音用於發送語音消息";
+NSPhotoLibraryUsageDescription="如果不允許，妳將無法在我行使用手機中的圖片和視頻";
+NSPhotoLibraryAddUsageDescription="如果不允許，妳將無法保存圖片到相冊";
+UILaunchStoryboardName="LaunchScreen_hk";

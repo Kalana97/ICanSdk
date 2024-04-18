@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PostMessageLimitTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15P-RL-a9e">
+                        <rect key="frame" x="16" y="16.5" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="Zb0-Gu-ShS"/>
+                            <constraint firstAttribute="height" constant="17" id="g6A-T4-fxS"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="wallet_recharge_way_select"/>
+                        <connections>
+                            <action selector="buttonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CDL-S4-lit"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet_alipayList_left_icon" translatesAutoresizingMaskIntoConstraints="NO" id="9N6-Bm-mmF">
+                        <rect key="frame" x="43" y="14" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="26e-zK-Kym"/>
+                            <constraint firstAttribute="width" constant="22" id="N4e-bJ-WBV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公开" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1i-JP-Jx4">
+                        <rect key="frame" x="75" y="9.5" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.10588235294117647" blue="0.11764705882352941" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任何用户或者非用户可见" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhy-O5-Yof">
+                        <rect key="frame" x="75" y="25.5" width="235" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="LQc-7m-vC2">
+                        <rect key="frame" x="300" y="17" width="10" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="83A-xz-M9k"/>
+                            <constraint firstAttribute="width" constant="10" id="OQq-oy-FMj"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="15P-RL-a9e" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="46e-fP-Pzr"/>
+                    <constraint firstItem="p1i-JP-Jx4" firstAttribute="leading" secondItem="9N6-Bm-mmF" secondAttribute="trailing" constant="10" id="7Yv-TF-6IE"/>
+                    <constraint firstItem="uhy-O5-Yof" firstAttribute="centerY" secondItem="9N6-Bm-mmF" secondAttribute="centerY" constant="8" id="85v-Fo-ev3"/>
+                    <constraint firstItem="9N6-Bm-mmF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8ci-jX-P8y"/>
+                    <constraint firstItem="9N6-Bm-mmF" firstAttribute="leading" secondItem="15P-RL-a9e" secondAttribute="trailing" constant="10" id="BSI-Kj-YlF"/>
+                    <constraint firstItem="uhy-O5-Yof" firstAttribute="leading" secondItem="9N6-Bm-mmF" secondAttribute="trailing" constant="10" id="FS5-nc-1tR"/>
+                    <constraint firstAttribute="trailing" secondItem="LQc-7m-vC2" secondAttribute="trailing" constant="10" id="GNk-jH-iuE"/>
+                    <constraint firstItem="p1i-JP-Jx4" firstAttribute="centerY" secondItem="9N6-Bm-mmF" secondAttribute="centerY" constant="-7" id="KDt-wF-iiQ"/>
+                    <constraint firstItem="15P-RL-a9e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="MgB-T2-cyp"/>
+                    <constraint firstItem="LQc-7m-vC2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VAQ-wJ-XFa"/>
+                    <constraint firstAttribute="trailing" secondItem="uhy-O5-Yof" secondAttribute="trailing" constant="10" id="am8-hg-9ON"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bottomLabel" destination="uhy-O5-Yof" id="0ds-Af-mC9"/>
+                <outlet property="iconImageView" destination="9N6-Bm-mmF" id="E5e-gl-BII"/>
+                <outlet property="leftBtn" destination="15P-RL-a9e" id="VPO-II-Wno"/>
+                <outlet property="rightImageView" destination="LQc-7m-vC2" id="tLo-ve-XCv"/>
+                <outlet property="topLabel" destination="p1i-JP-Jx4" id="ZhH-0X-Cu0"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_arrow_right" width="9" height="9"/>
+        <image name="wallet_alipayList_left_icon" width="30" height="30"/>
+        <image name="wallet_recharge_way_select" width="14" height="14"/>
+    </resources>
+</document>

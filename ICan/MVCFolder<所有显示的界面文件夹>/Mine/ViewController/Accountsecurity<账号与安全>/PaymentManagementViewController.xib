@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentManagementViewController">
+            <connections>
+                <outlet property="forgetPasswordBgView" destination="co3-NE-3rr" id="mTj-XZ-qxg"/>
+                <outlet property="forgetPasswordLab" destination="j2q-hQ-qKn" id="LzC-ve-KNV"/>
+                <outlet property="lineView" destination="mKn-WS-oX6" id="VJK-dy-Pcm"/>
+                <outlet property="resetPasswordBgView" destination="3c3-RA-PzT" id="C0Q-Ag-Auy"/>
+                <outlet property="resetPasswordLab" destination="8CM-Ec-hhc" id="UGT-0I-wPN"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Ogi-tE-cyH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3c3-RA-PzT" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKn-WS-oX6">
+                            <rect key="frame" x="10" y="49" width="394" height="1"/>
+                            <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="xKv-51-nGu"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重置密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CM-Ec-hhc">
+                            <rect key="frame" x="10" y="15.5" width="65.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.098039215690000001" green="0.1058823529" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="uO9-fq-5nB">
+                            <rect key="frame" x="392" y="18.5" width="12" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="13" id="YHw-sb-8KT"/>
+                                <constraint firstAttribute="width" constant="12" id="gwY-Rp-aB9"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="mKn-WS-oX6" secondAttribute="trailing" constant="10" id="3ww-zd-m1z"/>
+                        <constraint firstAttribute="bottom" secondItem="mKn-WS-oX6" secondAttribute="bottom" id="CTn-9g-hGC"/>
+                        <constraint firstItem="mKn-WS-oX6" firstAttribute="leading" secondItem="3c3-RA-PzT" secondAttribute="leading" constant="10" id="I1l-tj-9uV"/>
+                        <constraint firstItem="8CM-Ec-hhc" firstAttribute="centerY" secondItem="3c3-RA-PzT" secondAttribute="centerY" id="IRe-B3-lps"/>
+                        <constraint firstAttribute="trailing" secondItem="uO9-fq-5nB" secondAttribute="trailing" constant="10" id="Rl2-bs-VOs"/>
+                        <constraint firstAttribute="height" constant="50" id="ltQ-6N-SNa"/>
+                        <constraint firstItem="uO9-fq-5nB" firstAttribute="centerY" secondItem="3c3-RA-PzT" secondAttribute="centerY" id="q3o-Vl-q12"/>
+                        <constraint firstItem="8CM-Ec-hhc" firstAttribute="leading" secondItem="3c3-RA-PzT" secondAttribute="leading" constant="10" id="wcc-in-vFq"/>
+                    </constraints>
+                    <connections>
+                        <action selector="resetPasswordAction" destination="-1" eventType="touchUpInside" id="UV9-r0-H5V"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co3-NE-3rr" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="94" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="忘记密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2q-hQ-qKn">
+                            <rect key="frame" x="10" y="15.5" width="65.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.098039215690000001" green="0.1058823529" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="MDl-Lg-7hl">
+                            <rect key="frame" x="392" y="18.5" width="12" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="5k0-9e-jPO"/>
+                                <constraint firstAttribute="height" constant="13" id="gE1-rJ-lkf"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="MDl-Lg-7hl" secondAttribute="trailing" constant="10" id="92F-tK-NBG"/>
+                        <constraint firstAttribute="height" constant="50" id="HAq-pz-na6"/>
+                        <constraint firstItem="j2q-hQ-qKn" firstAttribute="centerY" secondItem="co3-NE-3rr" secondAttribute="centerY" id="K48-2G-eiW"/>
+                        <constraint firstItem="MDl-Lg-7hl" firstAttribute="centerY" secondItem="co3-NE-3rr" secondAttribute="centerY" id="OBZ-E0-8AZ"/>
+                        <constraint firstItem="j2q-hQ-qKn" firstAttribute="leading" secondItem="co3-NE-3rr" secondAttribute="leading" constant="10" id="Stp-Ed-OOL"/>
+                    </constraints>
+                    <connections>
+                        <action selector="forgetPasswordAction" destination="-1" eventType="touchUpInside" id="h9P-ou-taI"/>
+                    </connections>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3c3-RA-PzT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AS2-4A-JxC"/>
+                <constraint firstItem="co3-NE-3rr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Cst-EM-wXw"/>
+                <constraint firstItem="co3-NE-3rr" firstAttribute="top" secondItem="3c3-RA-PzT" secondAttribute="bottom" id="CwV-Sa-JFI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="co3-NE-3rr" secondAttribute="trailing" id="Efc-gj-eM6"/>
+                <constraint firstItem="3c3-RA-PzT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Sg5-cH-e5R"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3c3-RA-PzT" secondAttribute="trailing" id="aM6-jC-yrl"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_arrow_right" width="6.5" height="12"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

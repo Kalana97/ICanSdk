@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MemberCenterVIPCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="217" height="244"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="217" height="244"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pb-Cz-ZQZ">
+                        <rect key="frame" x="0.0" y="0.0" width="217" height="244"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ2-eq-qcP">
+                                <rect key="frame" x="97" y="110" width="23" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.78823529410000004" green="0.5568627451" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwv-6C-6Sh">
+                                <rect key="frame" x="93" y="85.5" width="31" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.21176470588235294" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9G-Iy-Tpz">
+                                <rect key="frame" x="105" y="144" width="7.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bwv-6C-6Sh" firstAttribute="bottom" secondItem="gZ2-eq-qcP" secondAttribute="top" constant="-10" id="56v-OW-obO"/>
+                            <constraint firstItem="gZ2-eq-qcP" firstAttribute="centerY" secondItem="4pb-Cz-ZQZ" secondAttribute="centerY" id="JjI-1o-buK"/>
+                            <constraint firstItem="g9G-Iy-Tpz" firstAttribute="centerX" secondItem="4pb-Cz-ZQZ" secondAttribute="centerX" id="LRW-Sk-mDg"/>
+                            <constraint firstItem="bwv-6C-6Sh" firstAttribute="centerX" secondItem="4pb-Cz-ZQZ" secondAttribute="centerX" id="emg-sm-mUx"/>
+                            <constraint firstItem="gZ2-eq-qcP" firstAttribute="centerX" secondItem="4pb-Cz-ZQZ" secondAttribute="centerX" id="fjR-oy-O1U"/>
+                            <constraint firstItem="g9G-Iy-Tpz" firstAttribute="top" secondItem="gZ2-eq-qcP" secondAttribute="bottom" constant="10" id="vsB-84-i6g"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4pb-Cz-ZQZ" secondAttribute="trailing" id="GqJ-36-jIi"/>
+                <constraint firstItem="4pb-Cz-ZQZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Xek-KW-nbc"/>
+                <constraint firstItem="4pb-Cz-ZQZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="giB-rI-T2H"/>
+                <constraint firstAttribute="bottom" secondItem="4pb-Cz-ZQZ" secondAttribute="bottom" id="xxS-1R-RBh"/>
+            </constraints>
+            <size key="customSize" width="217" height="244"/>
+            <connections>
+                <outlet property="bgView" destination="4pb-Cz-ZQZ" id="SPx-Zv-Vdu"/>
+                <outlet property="eachLab" destination="g9G-Iy-Tpz" id="hKd-75-Q4B"/>
+                <outlet property="moneyLab" destination="gZ2-eq-qcP" id="hGm-en-yU2"/>
+                <outlet property="timeLabel" destination="bwv-6C-6Sh" id="d4S-VD-8T5"/>
+            </connections>
+            <point key="canvasLocation" x="16.666666666666668" y="207.58928571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

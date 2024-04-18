@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--iCan Mall-->
+        <scene sceneID="bIx-5h-IPP">
+            <objects>
+                <viewController storyboardIdentifier="WebPageVC" id="ARz-ou-JHV" customClass="WebPageVC" customModule="ICanCN" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aZX-Lm-ZMA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cun-H2-n7C">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Udc-eK-4i9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cun-H2-n7C" firstAttribute="leading" secondItem="Udc-eK-4i9" secondAttribute="leading" id="FBl-0O-rNR"/>
+                            <constraint firstItem="cun-H2-n7C" firstAttribute="top" secondItem="Udc-eK-4i9" secondAttribute="top" id="KVA-6r-7GL"/>
+                            <constraint firstItem="Udc-eK-4i9" firstAttribute="trailing" secondItem="cun-H2-n7C" secondAttribute="trailing" id="e4F-zM-Gdn"/>
+                            <constraint firstItem="Udc-eK-4i9" firstAttribute="bottom" secondItem="cun-H2-n7C" secondAttribute="bottom" id="rwz-U6-gKR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="iCan Mall" style="browser" id="phX-FE-WDF"/>
+                    <connections>
+                        <outlet property="webView" destination="cun-H2-n7C" id="N1U-Ws-HG1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ok-VY-ygZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.2307692307693" y="3.5545023696682461"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gYZ-6d-8g3">
+            <objects>
+                <navigationController id="eVT-Zk-IKY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HMj-G4-i2A">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ARz-ou-JHV" kind="relationship" relationship="rootViewController" id="XXe-CM-YiA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQG-qI-sGj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

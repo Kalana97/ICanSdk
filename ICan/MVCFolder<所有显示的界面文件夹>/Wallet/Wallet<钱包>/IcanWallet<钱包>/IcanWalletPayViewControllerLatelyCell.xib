@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="IcanWalletPayViewControllerLatelyCell">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="416" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFY-2l-Wlb">
+                        <rect key="frame" x="10" y="7" width="4" height="4"/>
+                        <color key="backgroundColor" red="0.11372549019607843" green="0.50196078431372548" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="MEP-vt-kIF"/>
+                            <constraint firstAttribute="width" constant="4" id="cq9-V0-JMD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="转账" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eN8-Gq-YFH">
+                        <rect key="frame" x="20" y="0.0" width="31" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.1137254902" green="0.50196078430000002" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EIU-VI-yiM">
+                        <rect key="frame" x="71" y="0.0" width="335" height="65"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="749" text="nlineChange&quot;,&quot;msgContent&quot;:&quot;{\&quot;online\&quot;:true,\&quot;userId\&quot;:111120}&quot;,&quot;fromId&quot;:null,&quot;toId&quot;:111184,&quot;groupId&quot;:null" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtf-KG-8Eu">
+                                <rect key="frame" x="0.0" y="0.0" width="332" height="40.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="2021-10-10 12:22:55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzs-4j-4wJ">
+                                <rect key="frame" x="0.0" y="50.5" width="118.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eN8-Gq-YFH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="299-eL-obT"/>
+                    <constraint firstItem="jFY-2l-Wlb" firstAttribute="centerY" secondItem="eN8-Gq-YFH" secondAttribute="centerY" id="Msa-08-u2s"/>
+                    <constraint firstItem="EIU-VI-yiM" firstAttribute="leading" secondItem="eN8-Gq-YFH" secondAttribute="trailing" constant="20" id="Qxc-YK-a2N"/>
+                    <constraint firstAttribute="trailing" secondItem="EIU-VI-yiM" secondAttribute="trailing" constant="10" id="TmB-7t-hIl"/>
+                    <constraint firstItem="EIU-VI-yiM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XyG-IK-a3U"/>
+                    <constraint firstItem="eN8-Gq-YFH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cfa-nE-K6a"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EIU-VI-yiM" secondAttribute="bottom" constant="20" id="f0A-Wc-3dd"/>
+                    <constraint firstItem="jFY-2l-Wlb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fL1-9k-jyp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="circleView" destination="jFY-2l-Wlb" id="tRf-ij-N0W"/>
+                <outlet property="detailLabel" destination="jtf-KG-8Eu" id="HHE-mE-CeW"/>
+                <outlet property="timeLabel" destination="uzs-4j-4wJ" id="wcw-GU-Ini"/>
+                <outlet property="typeLabel" destination="eN8-Gq-YFH" id="C8E-oV-Wsd"/>
+            </connections>
+            <point key="canvasLocation" x="68.115942028985515" y="147.65625"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SelectAreaCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vI-k6-KpN">
+                        <rect key="frame" x="10" y="10" width="296" height="45"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.10588235294117647" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="is9-gh-GOu">
+                        <rect key="frame" x="15" y="65" width="286" height="5"/>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.22745098039215686" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="hsY-lf-IR1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4vI-k6-KpN" secondAttribute="bottom" constant="15" id="Awb-Yn-EOH"/>
+                <constraint firstItem="4vI-k6-KpN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Qs0-cv-IVv"/>
+                <constraint firstItem="is9-gh-GOu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="Rub-Vs-4uv"/>
+                <constraint firstAttribute="bottom" secondItem="is9-gh-GOu" secondAttribute="bottom" id="X2M-EU-Za0"/>
+                <constraint firstAttribute="trailing" secondItem="is9-gh-GOu" secondAttribute="trailing" constant="15" id="ccb-Mk-gyz"/>
+                <constraint firstAttribute="trailing" secondItem="4vI-k6-KpN" secondAttribute="trailing" constant="10" id="k8Y-gh-trl"/>
+                <constraint firstItem="4vI-k6-KpN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="w2h-zi-cLY"/>
+            </constraints>
+            <size key="customSize" width="316" height="70"/>
+            <connections>
+                <outlet property="lineView" destination="is9-gh-GOu" id="ySx-Ja-3ql"/>
+                <outlet property="titleLabel" destination="4vI-k6-KpN" id="YUD-iJ-aoo"/>
+            </connections>
+            <point key="canvasLocation" x="-222" y="98"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BankCardListAddTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhe-GF-ZdJ">
+                        <rect key="frame" x="10" y="5" width="300" height="95"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支持储蓄卡/信用卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="it5-1l-Y0H">
+                                <rect key="frame" x="99" y="47" width="102" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXl-EB-GxC">
+                                <rect key="frame" x="123.5" y="17" width="77" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_bankcard_add" translatesAutoresizingMaskIntoConstraints="NO" id="o1h-HY-NN9">
+                                <rect key="frame" x="103.5" y="18.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="cp4-6X-fLC"/>
+                                    <constraint firstAttribute="height" constant="15" id="tVd-Tw-VXd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstItem="o1h-HY-NN9" firstAttribute="centerY" secondItem="TXl-EB-GxC" secondAttribute="centerY" id="23q-oC-gEx"/>
+                            <constraint firstItem="it5-1l-Y0H" firstAttribute="centerX" secondItem="qhe-GF-ZdJ" secondAttribute="centerX" id="BWe-v2-68C"/>
+                            <constraint firstItem="it5-1l-Y0H" firstAttribute="top" secondItem="TXl-EB-GxC" secondAttribute="bottom" constant="12" id="aTB-MY-S97"/>
+                            <constraint firstAttribute="bottom" secondItem="it5-1l-Y0H" secondAttribute="bottom" constant="33" id="haX-P6-2bO"/>
+                            <constraint firstItem="TXl-EB-GxC" firstAttribute="leading" secondItem="o1h-HY-NN9" secondAttribute="trailing" constant="5" id="kgg-j5-ifT"/>
+                            <constraint firstItem="TXl-EB-GxC" firstAttribute="centerX" secondItem="qhe-GF-ZdJ" secondAttribute="centerX" constant="12" id="z3F-Td-l1I"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qhe-GF-ZdJ" secondAttribute="trailing" constant="10" id="Bu8-BV-5QP"/>
+                    <constraint firstItem="qhe-GF-ZdJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Pc8-zJ-Muk"/>
+                    <constraint firstAttribute="bottom" secondItem="qhe-GF-ZdJ" secondAttribute="bottom" constant="5" id="VHY-PR-WMh"/>
+                    <constraint firstItem="qhe-GF-ZdJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="jNw-aY-DH8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="addBankCardLabel" destination="TXl-EB-GxC" id="Dca-xg-hvQ"/>
+                <outlet property="addBankCardTipsLabel" destination="it5-1l-Y0H" id="6Jm-NA-LR4"/>
+                <outlet property="bgView" destination="qhe-GF-ZdJ" id="OQP-ph-O2V"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="124.88839285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_bankcard_add" width="25" height="25"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

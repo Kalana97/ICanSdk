@@ -1,0 +1,16 @@
+/* 
+  InfoPlist.strings
+  ICan
+
+  Created by dzl on 11/10/2019.
+  Copyright © 2019 dzl. All rights reserved.
+*/
+CFBundleDisplayName="iCan Meta";
+NSLocationWhenInUseUsageDescription = "あなたの位置情報は、あなたが近くの人々とより便利にコミュニケーションするのを助けるためにあなたの位置についての近くの情報を取得するために使用されます";
+NSLocationUsageDescription = "あなたの位置情報は、あなたが近くの人々とより便利にコミュニケーションするのを助けるためにあなたの位置についての近くの情報を取得するために使用されます";
+NSCameraUsageDescription = "許可され​​ていない場合、写真を撮ったり、QRコードをスキャンしたりすることはできません";
+NSContactsUsageDescription = "アドレスブックにアクセスして、友達と照合したり、電話料金を請求したりできます";
+NSMicrophoneUsageDescription = "許可され​​ていない場合、録音を使用して音声メッセージを送信することはできません";
+NSPhotoLibraryUsageDescription = "許可され​​ていない場合、アルバム内の写真やビデオを使用して、プロフィール写真を変更したり、投稿したり、送信したりすることはできません。";
+NSPhotoLibraryAddUsageDescription = "許可され​​ていない場合、写真をアルバムに保存することはできません";
+UILaunchStoryboardName="LaunchScreen";

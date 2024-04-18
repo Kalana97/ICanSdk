@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FriendListNavBarView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RhE-I3-zo5">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mec-lF-79Y">
+                            <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xB-c4-vS8">
+                                    <rect key="frame" x="10" y="12" width="44.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" red="0.098039215690000001" green="0.1058823529" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkb-0U-FDD">
+                                    <rect key="frame" x="374" y="7" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="5da-Q5-gOo"/>
+                                        <constraint firstAttribute="height" constant="30" id="BIF-Je-I2R"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" backgroundImage="icon_chat__nav_add"/>
+                                    <connections>
+                                        <action selector="publishAction" destination="iN0-l3-epB" eventType="touchUpInside" id="Kc5-IN-3Me"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="2xB-c4-vS8" firstAttribute="centerY" secondItem="Mec-lF-79Y" secondAttribute="centerY" id="0ak-5I-9tY"/>
+                                <constraint firstAttribute="trailing" secondItem="Wkb-0U-FDD" secondAttribute="trailing" constant="10" id="EF4-0S-36C"/>
+                                <constraint firstAttribute="height" constant="44" id="eI9-aS-naV"/>
+                                <constraint firstItem="2xB-c4-vS8" firstAttribute="leading" secondItem="Mec-lF-79Y" secondAttribute="leading" constant="10" id="eRh-PD-QpR"/>
+                                <constraint firstItem="Wkb-0U-FDD" firstAttribute="centerY" secondItem="Mec-lF-79Y" secondAttribute="centerY" id="pYc-ct-Aw9"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="88" id="3rL-cA-Sif"/>
+                        <constraint firstAttribute="trailing" secondItem="Mec-lF-79Y" secondAttribute="trailing" id="4qL-L1-Ijl"/>
+                        <constraint firstAttribute="bottom" secondItem="Mec-lF-79Y" secondAttribute="bottom" id="GZy-Le-J1u"/>
+                        <constraint firstItem="Mec-lF-79Y" firstAttribute="leading" secondItem="RhE-I3-zo5" secondAttribute="leading" id="xn5-Wx-yWv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RhE-I3-zo5" secondAttribute="trailing" id="5la-ZJ-dM4"/>
+                <constraint firstItem="RhE-I3-zo5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hDs-Mn-rnG"/>
+                <constraint firstItem="RhE-I3-zo5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="k1e-1j-SeV"/>
+            </constraints>
+            <connections>
+                <outlet property="addHeight" destination="BIF-Je-I2R" id="eWg-VP-GHJ"/>
+                <outlet property="addwidth" destination="5da-Q5-gOo" id="HG6-0g-uAT"/>
+                <outlet property="navbarHeight" destination="3rL-cA-Sif" id="ieT-Fg-Ca7"/>
+                <outlet property="titleLabel" destination="2xB-c4-vS8" id="rPr-k5-od7"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="116"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_chat__nav_add" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

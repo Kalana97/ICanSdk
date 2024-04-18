@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PopupView">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDQ-og-34M">
+                    <rect key="frame" x="10" y="177.33333333333334" width="373" height="497.33333333333326"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b4n-av-9Cp">
+                            <rect key="frame" x="0.0" y="0.0" width="373" height="497.33333333333331"/>
+                        </imageView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="oeS-4x-h3q"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="b4n-av-9Cp" firstAttribute="top" secondItem="oeS-4x-h3q" secondAttribute="top" id="HdX-Tw-6Sc"/>
+                        <constraint firstItem="oeS-4x-h3q" firstAttribute="trailing" secondItem="b4n-av-9Cp" secondAttribute="trailing" id="Kdm-5S-URB"/>
+                        <constraint firstItem="b4n-av-9Cp" firstAttribute="leading" secondItem="oeS-4x-h3q" secondAttribute="leading" id="fD4-2M-65W"/>
+                        <constraint firstAttribute="width" secondItem="sDQ-og-34M" secondAttribute="height" multiplier="3:4" id="heU-BA-ir6"/>
+                        <constraint firstItem="oeS-4x-h3q" firstAttribute="bottom" secondItem="b4n-av-9Cp" secondAttribute="bottom" id="wbT-W1-dXn"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sDQ-og-34M" secondAttribute="trailing" constant="10" id="490-t3-dpy"/>
+                <constraint firstItem="sDQ-og-34M" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="JHB-es-Dr0"/>
+                <constraint firstItem="sDQ-og-34M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Wy5-5v-iWo"/>
+                <constraint firstItem="sDQ-og-34M" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="asF-dW-65J"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="b4n-av-9Cp" id="GG5-g4-nfB"/>
+            </connections>
+            <point key="canvasLocation" x="112" y="21"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SelectBuyerComplaintPopView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTW-Ch-h7u">
+                    <rect key="frame" x="0.0" y="629" width="414" height="267"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EJb-cX-avL">
+                            <rect key="frame" x="20" y="0.0" width="374" height="267"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E82-NB-YXT" customClass="UIControl">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="67"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="申诉理由" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUU-DD-Lgv">
+                                            <rect key="frame" x="146" y="21.5" width="82" height="24"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="eUU-DD-Lgv" firstAttribute="centerX" secondItem="E82-NB-YXT" secondAttribute="centerX" id="FNm-79-1aB"/>
+                                        <constraint firstAttribute="height" constant="67" id="y8Z-pa-aqx"/>
+                                        <constraint firstItem="eUU-DD-Lgv" firstAttribute="centerY" secondItem="E82-NB-YXT" secondAttribute="centerY" id="zAf-Gk-PlN"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="reasonOneAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="sVb-Vn-Fhx"/>
+                                    </connections>
+                                </view>
+                                <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvW-4w-fvG" customClass="UIControl">
+                                    <rect key="frame" x="0.0" y="67" width="374" height="60"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我已付款，卖家未放行" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQx-Vx-UwG">
+                                            <rect key="frame" x="0.0" y="20.5" width="163.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.098039215690000001" green="0.1058823529" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3l-JX-bcx">
+                                            <rect key="frame" x="0.0" y="59" width="374" height="1"/>
+                                            <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="pEI-Aq-fh5"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="c3l-JX-bcx" secondAttribute="trailing" id="4BR-EN-O3S"/>
+                                        <constraint firstAttribute="height" constant="60" id="7r8-cc-M6k"/>
+                                        <constraint firstItem="NQx-Vx-UwG" firstAttribute="centerY" secondItem="bvW-4w-fvG" secondAttribute="centerY" id="Dsc-XV-cEf"/>
+                                        <constraint firstAttribute="bottom" secondItem="c3l-JX-bcx" secondAttribute="bottom" id="Mm9-cg-zpb"/>
+                                        <constraint firstItem="c3l-JX-bcx" firstAttribute="leading" secondItem="bvW-4w-fvG" secondAttribute="leading" id="n59-As-D3l"/>
+                                        <constraint firstItem="NQx-Vx-UwG" firstAttribute="leading" secondItem="bvW-4w-fvG" secondAttribute="leading" id="rt9-yK-SIg"/>
+                                    </constraints>
+                                </view>
+                                <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w77-H7-Zs3" customClass="UIControl">
+                                    <rect key="frame" x="0.0" y="127" width="374" height="60"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我向卖家多付了钱" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V25-bI-aTK">
+                                            <rect key="frame" x="0.0" y="21" width="122.5" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.098039215690000001" green="0.1058823529" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWc-UC-SHT">
+                                            <rect key="frame" x="0.0" y="59" width="374" height="1"/>
+                                            <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="EVx-Hx-zXk"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="gWc-UC-SHT" secondAttribute="trailing" id="GTI-g9-xbb"/>
+                                        <constraint firstItem="V25-bI-aTK" firstAttribute="leading" secondItem="w77-H7-Zs3" secondAttribute="leading" id="MPi-CF-oSh"/>
+                                        <constraint firstAttribute="height" constant="60" id="Wlb-Ft-XlC"/>
+                                        <constraint firstItem="V25-bI-aTK" firstAttribute="centerY" secondItem="w77-H7-Zs3" secondAttribute="centerY" id="aw2-Pv-x1C"/>
+                                        <constraint firstAttribute="bottom" secondItem="gWc-UC-SHT" secondAttribute="bottom" id="h3X-qi-czu"/>
+                                        <constraint firstItem="gWc-UC-SHT" firstAttribute="leading" secondItem="w77-H7-Zs3" secondAttribute="leading" id="ldL-jp-j6N"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="reasonTwoAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ydn-5F-Lhk"/>
+                                    </connections>
+                                </view>
+                                <view tag="102" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0E-2X-JAi" customClass="UIControl">
+                                    <rect key="frame" x="0.0" y="187" width="374" height="60"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卖家涉嫌诈骗" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7JI-Ed-K1n">
+                                            <rect key="frame" x="0.0" y="21" width="92" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.098039215690000001" green="0.1058823529" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PP6-ds-Je4">
+                                            <rect key="frame" x="0.0" y="59" width="374" height="1"/>
+                                            <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="2pT-1b-X8Q"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="PP6-ds-Je4" secondAttribute="bottom" id="8M7-54-XID"/>
+                                        <constraint firstItem="7JI-Ed-K1n" firstAttribute="leading" secondItem="i0E-2X-JAi" secondAttribute="leading" id="FFu-Fo-zyu"/>
+                                        <constraint firstAttribute="height" constant="60" id="Hzh-5x-4Te"/>
+                                        <constraint firstAttribute="trailing" secondItem="PP6-ds-Je4" secondAttribute="trailing" id="rEI-jK-s8d"/>
+                                        <constraint firstItem="7JI-Ed-K1n" firstAttribute="centerY" secondItem="i0E-2X-JAi" secondAttribute="centerY" id="s6d-CX-E8L"/>
+                                        <constraint firstItem="PP6-ds-Je4" firstAttribute="leading" secondItem="i0E-2X-JAi" secondAttribute="leading" id="xFF-fY-M2m"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="reasonThreeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Rki-Rg-b7Q"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRM-IT-OND">
+                                    <rect key="frame" x="0.0" y="247" width="374" height="20"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="xVd-g1-zdW"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="EJb-cX-avL" secondAttribute="bottom" id="6hs-WA-z8r"/>
+                        <constraint firstAttribute="trailing" secondItem="EJb-cX-avL" secondAttribute="trailing" constant="20" id="Tbv-Bl-VBz"/>
+                        <constraint firstItem="EJb-cX-avL" firstAttribute="leading" secondItem="RTW-Ch-h7u" secondAttribute="leading" constant="20" id="XoF-66-cI5"/>
+                        <constraint firstItem="EJb-cX-avL" firstAttribute="top" secondItem="RTW-Ch-h7u" secondAttribute="top" id="bPL-bQ-drW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="RTW-Ch-h7u" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9oW-af-3Qa"/>
+                <constraint firstAttribute="bottom" secondItem="RTW-Ch-h7u" secondAttribute="bottom" id="C8Q-WQ-OsI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RTW-Ch-h7u" secondAttribute="trailing" id="CWX-zG-WCA"/>
+            </constraints>
+            <connections>
+                <outlet property="reasonLab1" destination="NQx-Vx-UwG" id="zRe-Ue-NwE"/>
+                <outlet property="reasonLab2" destination="V25-bI-aTK" id="15p-8a-kNL"/>
+                <outlet property="reasonLab3" destination="7JI-Ed-K1n" id="23x-Zt-Qp4"/>
+                <outlet property="reasonOneBgCon" destination="bvW-4w-fvG" id="AG5-4J-JQJ"/>
+                <outlet property="titleLab" destination="eUU-DD-Lgv" id="SzI-Ol-vWp"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="129"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DZAVPlayerViewController">
+            <connections>
+                <outlet property="bgContentView" destination="0lS-sQ-H96" id="DcO-2e-vlp"/>
+                <outlet property="bottomConstraint" destination="xhc-KC-svu" id="Akl-jD-Zy8"/>
+                <outlet property="bottomToolView" destination="0lS-sQ-H96" id="EXd-PE-5n3"/>
+                <outlet property="cancleButton" destination="fiL-ZC-pII" id="XLO-lO-8zh"/>
+                <outlet property="currentTimeLabel" destination="smM-ze-Ddp" id="xbW-ye-dcQ"/>
+                <outlet property="layerView" destination="IpX-S4-AAR" id="KcT-zt-F1f"/>
+                <outlet property="leftContraint" destination="Fkj-cr-Qpa" id="1sl-Nt-LMB"/>
+                <outlet property="moreButton" destination="FGe-gz-SLA" id="Yyk-Y5-eCm"/>
+                <outlet property="playSwitch" destination="sMP-xI-nEg" id="JXA-GK-60N"/>
+                <outlet property="rightConstraint" destination="2JH-EH-LVp" id="hvl-jQ-Ldh"/>
+                <outlet property="totleTimeLabel" destination="2L2-v7-CzT" id="9L0-n4-e4t"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IpX-S4-AAR" customClass="DZPlayerLayerView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkF-AR-MFn">
+                            <rect key="frame" x="182" y="423" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="L21-Jt-IqO"/>
+                                <constraint firstAttribute="height" constant="50" id="gvk-R1-I7Y"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" backgroundImage="icon_video_play"/>
+                            <connections>
+                                <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="r6w-9Y-4b3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="qkF-AR-MFn" firstAttribute="centerX" secondItem="IpX-S4-AAR" secondAttribute="centerX" id="AbS-NR-ewB"/>
+                        <constraint firstItem="qkF-AR-MFn" firstAttribute="centerY" secondItem="IpX-S4-AAR" secondAttribute="centerY" id="uOE-cc-ing"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0lS-sQ-H96">
+                    <rect key="frame" x="0.0" y="856" width="414" height="20"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iSU-Dw-aVW">
+                            <rect key="frame" x="25" y="0.0" width="364" height="20"/>
+                            <subviews>
+                                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiL-ZC-pII">
+                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="urx-KD-7m4"/>
+                                        <constraint firstAttribute="height" constant="20" id="zJ8-Og-TmT"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="icon_close_circle_white"/>
+                                    <connections>
+                                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="GfT-fa-fCA"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMP-xI-nEg">
+                                    <rect key="frame" x="40" y="0.0" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="DT4-eL-Swo"/>
+                                        <constraint firstAttribute="width" constant="20" id="JZb-w6-GuQ"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="icon_video_suspend"/>
+                                    <connections>
+                                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="zKQ-EX-cnt"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smM-ze-Ddp">
+                                    <rect key="frame" x="70" y="3" width="34" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGe-gz-SLA">
+                                    <rect key="frame" x="344" y="0.0" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="gdp-Ag-P4s"/>
+                                        <constraint firstAttribute="height" constant="20" id="tuP-0O-AWQ"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="icon_timeline_video_more"/>
+                                    <connections>
+                                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="LLf-Kt-Bil"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2L2-v7-CzT">
+                                    <rect key="frame" x="300" y="3" width="34" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="fiL-ZC-pII" firstAttribute="leading" secondItem="iSU-Dw-aVW" secondAttribute="leading" id="21W-0O-MT5"/>
+                                <constraint firstItem="FGe-gz-SLA" firstAttribute="leading" secondItem="2L2-v7-CzT" secondAttribute="trailing" constant="10" id="7Rm-Ib-63H"/>
+                                <constraint firstItem="sMP-xI-nEg" firstAttribute="leading" secondItem="fiL-ZC-pII" secondAttribute="trailing" constant="20" id="7v9-gV-7fS"/>
+                                <constraint firstAttribute="height" constant="20" id="AZ7-Y3-GZX"/>
+                                <constraint firstItem="sMP-xI-nEg" firstAttribute="centerY" secondItem="fiL-ZC-pII" secondAttribute="centerY" id="DPL-P2-l8o"/>
+                                <constraint firstItem="smM-ze-Ddp" firstAttribute="leading" secondItem="sMP-xI-nEg" secondAttribute="trailing" constant="10" id="EET-lJ-56v"/>
+                                <constraint firstItem="2L2-v7-CzT" firstAttribute="centerY" secondItem="sMP-xI-nEg" secondAttribute="centerY" id="kXy-W9-N57"/>
+                                <constraint firstAttribute="trailing" secondItem="FGe-gz-SLA" secondAttribute="trailing" id="nGE-pD-kte"/>
+                                <constraint firstItem="FGe-gz-SLA" firstAttribute="centerY" secondItem="iSU-Dw-aVW" secondAttribute="centerY" id="qbO-rw-Krg"/>
+                                <constraint firstItem="smM-ze-Ddp" firstAttribute="centerY" secondItem="sMP-xI-nEg" secondAttribute="centerY" id="yf8-VI-Q0G"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="iSU-Dw-aVW" secondAttribute="trailing" constant="25" id="EFZ-dC-WYT"/>
+                        <constraint firstItem="iSU-Dw-aVW" firstAttribute="top" secondItem="0lS-sQ-H96" secondAttribute="top" id="Ffo-Th-Yh2"/>
+                        <constraint firstItem="iSU-Dw-aVW" firstAttribute="leading" secondItem="0lS-sQ-H96" secondAttribute="leading" constant="25" id="KfQ-q7-Kzr"/>
+                        <constraint firstItem="fiL-ZC-pII" firstAttribute="centerY" secondItem="0lS-sQ-H96" secondAttribute="centerY" id="aLT-a5-gv1"/>
+                        <constraint firstAttribute="height" constant="20" id="z5h-aG-Gcl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="QIk-Y8-vz9"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0lS-sQ-H96" secondAttribute="trailing" id="2JH-EH-LVp"/>
+                <constraint firstItem="0lS-sQ-H96" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fkj-cr-Qpa"/>
+                <constraint firstItem="IpX-S4-AAR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MSC-uN-SCQ"/>
+                <constraint firstItem="IpX-S4-AAR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Sht-2K-4w8"/>
+                <constraint firstAttribute="trailing" secondItem="IpX-S4-AAR" secondAttribute="trailing" id="eEO-4r-00e"/>
+                <constraint firstAttribute="bottom" secondItem="IpX-S4-AAR" secondAttribute="bottom" id="eoy-uP-n56"/>
+                <constraint firstItem="0lS-sQ-H96" firstAttribute="bottom" secondItem="QIk-Y8-vz9" secondAttribute="bottom" constant="-20" id="xhc-KC-svu"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_close_circle_white" width="128" height="128"/>
+        <image name="icon_timeline_video_more" width="128" height="128"/>
+        <image name="icon_video_play" width="50" height="50"/>
+        <image name="icon_video_suspend" width="128" height="128"/>
+    </resources>
+</document>

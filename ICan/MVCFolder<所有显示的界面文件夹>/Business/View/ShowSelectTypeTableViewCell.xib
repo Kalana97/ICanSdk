@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="gvk-am-M5N" customClass="ShowSelectTypeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gvk-am-M5N" id="1Kz-kn-fU9">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxn-ar-rze">
+                        <rect key="frame" x="10" y="29.666666666666671" width="37.666666666666664" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.098039215690000001" green="0.1058823529" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shop_success" translatesAutoresizingMaskIntoConstraints="NO" id="MP7-Qb-AGj">
+                        <rect key="frame" x="389" y="28.666666666666671" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="6Zf-9C-Ko8"/>
+                            <constraint firstAttribute="width" constant="20" id="iRu-SI-PFz"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cxn-ar-rze" firstAttribute="leading" secondItem="1Kz-kn-fU9" secondAttribute="leading" constant="10" id="2wc-2I-BTx"/>
+                    <constraint firstItem="cxn-ar-rze" firstAttribute="centerY" secondItem="1Kz-kn-fU9" secondAttribute="centerY" id="DAN-Kr-qnC"/>
+                    <constraint firstItem="MP7-Qb-AGj" firstAttribute="centerY" secondItem="1Kz-kn-fU9" secondAttribute="centerY" id="XRZ-ei-6pS"/>
+                    <constraint firstAttribute="trailing" secondItem="MP7-Qb-AGj" secondAttribute="trailing" constant="10" id="kWP-97-e11"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="JsN-li-Gjd"/>
+            <connections>
+                <outlet property="selectImgView" destination="MP7-Qb-AGj" id="6OR-He-dPY"/>
+                <outlet property="titleLabel" destination="cxn-ar-rze" id="d04-Bf-V8a"/>
+            </connections>
+            <point key="canvasLocation" x="209.42028985507247" y="90.736607142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shop_success" width="114" height="114"/>
+    </resources>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Select43PayWayHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="136"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="znV-zX-51K">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="136"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UI9-gG-GU8">
+                            <rect key="frame" x="119.5" y="25" width="175.5" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                            <color key="textColor" red="0.098039215686274508" green="0.10588235294117647" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHk-qh-6wx">
+                            <rect key="frame" x="189.5" y="95" width="35.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgg-HM-O97">
+                            <rect key="frame" x="0.0" y="135" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="kTT-5D-QmO"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="UI9-gG-GU8" firstAttribute="top" secondItem="znV-zX-51K" secondAttribute="top" constant="25" id="8GG-sO-bot"/>
+                        <constraint firstItem="OHk-qh-6wx" firstAttribute="centerX" secondItem="znV-zX-51K" secondAttribute="centerX" id="Hk1-23-eR2"/>
+                        <constraint firstAttribute="bottom" secondItem="Pgg-HM-O97" secondAttribute="bottom" id="Hkv-F4-tm3"/>
+                        <constraint firstItem="UI9-gG-GU8" firstAttribute="centerX" secondItem="znV-zX-51K" secondAttribute="centerX" id="R2L-bk-m7X"/>
+                        <constraint firstAttribute="bottom" secondItem="OHk-qh-6wx" secondAttribute="bottom" constant="24" id="Xcz-ha-eZv"/>
+                        <constraint firstAttribute="trailing" secondItem="Pgg-HM-O97" secondAttribute="trailing" id="miV-Vs-LAC"/>
+                        <constraint firstItem="OHk-qh-6wx" firstAttribute="top" secondItem="UI9-gG-GU8" secondAttribute="bottom" constant="10" id="seb-CU-oUZ"/>
+                        <constraint firstItem="Pgg-HM-O97" firstAttribute="leading" secondItem="znV-zX-51K" secondAttribute="leading" id="tdf-er-AFJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="znV-zX-51K" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0S8-Yo-VuC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="znV-zX-51K" secondAttribute="bottom" id="2U1-s2-JjJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="znV-zX-51K" secondAttribute="trailing" id="Gcj-QT-cVF"/>
+                <constraint firstItem="znV-zX-51K" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="afE-HP-d1a"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="amountLabel" destination="UI9-gG-GU8" id="Ds1-z8-AMl"/>
+                <outlet property="lineView" destination="Pgg-HM-O97" id="fdt-SM-8o9"/>
+            </connections>
+            <point key="canvasLocation" x="-88.405797101449281" y="-105.80357142857143"/>
+        </view>
+    </objects>
+</document>

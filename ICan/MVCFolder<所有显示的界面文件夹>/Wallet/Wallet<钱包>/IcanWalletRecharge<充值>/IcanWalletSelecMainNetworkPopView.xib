@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IcanWalletSelecMainNetworkPopView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCy-lH-Smp">
+                    <rect key="frame" x="10" y="150" width="394" height="135"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RKF-IX-41e">
+                            <rect key="frame" x="10" y="0.0" width="374" height="135"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BM5-oB-hhZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="120"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="120" id="OEG-gB-faK"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="dataSource" destination="iN0-l3-epB" id="jIE-Cy-s3R"/>
+                                        <outlet property="delegate" destination="iN0-l3-epB" id="E6K-DE-4Qu"/>
+                                    </connections>
+                                </tableView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EuX-11-Lop">
+                                    <rect key="frame" x="0.0" y="120" width="374" height="15"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="VWy-c7-FDc"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RKF-IX-41e" secondAttribute="trailing" constant="10" id="2qm-y2-q4E"/>
+                        <constraint firstItem="RKF-IX-41e" firstAttribute="top" secondItem="WCy-lH-Smp" secondAttribute="top" id="ICf-Ln-a6S"/>
+                        <constraint firstAttribute="bottom" secondItem="RKF-IX-41e" secondAttribute="bottom" id="bi7-um-WKZ"/>
+                        <constraint firstItem="RKF-IX-41e" firstAttribute="leading" secondItem="WCy-lH-Smp" secondAttribute="leading" constant="10" id="mck-7R-nN9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="WCy-lH-Smp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Dij-5f-kFO"/>
+                <constraint firstAttribute="trailing" secondItem="WCy-lH-Smp" secondAttribute="trailing" constant="10" id="Dm6-FH-hYe"/>
+                <constraint firstItem="WCy-lH-Smp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="150" id="dgz-7l-8h2"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="WCy-lH-Smp" id="vDv-Uo-icN"/>
+                <outlet property="tableView" destination="BM5-oB-hhZ" id="gql-QV-T4b"/>
+                <outlet property="tableViewHeight" destination="OEG-gB-faK" id="eak-1L-9dP"/>
+                <outlet property="topConstraint" destination="dgz-7l-8h2" id="rAK-Z7-6VX"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="135"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

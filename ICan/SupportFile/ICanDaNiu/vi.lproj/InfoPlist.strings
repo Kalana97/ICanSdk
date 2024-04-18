@@ -1,0 +1,16 @@
+/* 
+  InfoPlist.strings
+  ICan
+
+  Created by dzl on 11/10/2019.
+  Copyright © 2019 dzl. All rights reserved.
+*/
+CFBundleDisplayName="iCan Chat";
+NSLocationWhenInUseUsageDescription="Thông tin về vị trí của bạn sẽ được sử dụng để tìm thông tin về vị trí của bạn và giúp bạn giao tiếp với những người gần đó dễ dàng hơn";
+NSLocationUsageDescription="Thông tin về vị trí của bạn sẽ được sử dụng để tìm thông tin về vị trí của bạn và giúp bạn giao tiếp với những người gần đó dễ dàng hơn";
+NSCameraUsageDescription="Nếu không, bạn sẽ không thể chụp ảnh trong ngân hàng của chúng tôi và sử dụng chức năng giải mã QR quét";
+NSContactsUsageDescription="Ngân hàng của chúng tôi sẽ xem sổ địa chỉ của bạn để khớp với bạn của bạn hoặc nạp lại tiền điện thoại";
+NSMicrophoneUsageDescription="Nếu không, bạn sẽ không thể ghi âm trong ngân hàng của chúng tôi để gửi tin nhắn thoại.";
+NSPhotoLibraryUsageDescription="Nếu không, các bạn sẽ không thể dùng ảnh và ảnh động trong ngân hàng của chúng tôi";
+NSPhotoLibraryAddUsageDescription="Nếu không được phép, bạn sẽ không thể lưu ảnh vào album";
+UILaunchStoryboardName="LaunchScreen_vie";
